@@ -68,6 +68,10 @@ header .header_i nav ul li {
   font-family: "pM";
 }
 
+header .header_i nav ul li:hover{
+  color: #FFD700;
+}
+
 /* header > ham */
 header .header_i .ham {
   width: 40px;
@@ -145,7 +149,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 }
 
 .mobile_menu nav ul li a {
-  color: #fff; /* 흰색 텍스트 */
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -661,6 +665,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   position: relative;
   z-index: 1;
   transition: color 0.4s ease;
+  font-size: clamp(14px, 3vw, 16px);
 }
 
 .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox::before{
@@ -724,6 +729,9 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
 .contact .contact_i .contact_email .contact_email_email {
   font-size: 40px;
+}
+
+.contact .contact_i .contact_email .contact_email_email:hover{
   color: #FFD700;
 }
 
@@ -753,12 +761,27 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
 /* media 1024 */
 @media screen and (max-width:1240px) {
+  header .header_i{
+    max-width: 100%;
+  }
   header .header_i nav{
     display: none;
   }
 
   header .header_i .ham{
     display: flex;
+  }
+
+  .main .main_i{
+    max-width: 100%;
+  }
+
+  .about .about_i{
+    max-width: 100%;
+  }
+
+  .footer .footer_i{
+    max-width: 100%;
   }
 }
 
@@ -785,6 +808,34 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   }
 }
 
+/* media 500px */
+@media screen and (max-width:500px) {
+  .mobile_menu nav ul li a:hover{
+    color: #fff;
+  }
+
+  .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox:hover::before {
+    width: 0%;
+  }
+  
+  .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox:hover .portfolio_sbox_iconbox_text {
+    color: #fff;
+  }
+
+  .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox img {
+    width: 14px;
+    height: auto;
+  }
+  
+  .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox .portfolio_sbox_iconbox_text {
+    font-size: 13px;
+  }
+
+  .contact .contact_i .contact_email .contact_email_email{
+    color: #FFD700;
+  }
+}
+
 /* media 360px */
 @media screen and (max-width:360px) {
   .about .about_i .about_box .about_img img{
@@ -801,5 +852,9 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
   .contact .contact_i .contact_email .contact_email_email{
     font-size: 32px;
+  }
+
+  .contact .contact_i .contact_email .contact_email_email:hover {
+    color: #ffd700;
   }
 }
