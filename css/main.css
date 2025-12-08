@@ -729,10 +729,32 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
 .contact .contact_i .contact_email .contact_email_email {
   font-size: 40px;
+  font-family: "pB";
 }
 
-.contact .contact_i .contact_email .contact_email_email:hover{
-  color: #FFD700;
+/* contact > contact_etc_box */
+.contact .contact_i .contact_etc_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.contact .contact_i .contact_etc_box:hover{
+  color: #ffd700;
+}
+
+.contact .contact_i .contact_etc_box .contact_etc_p1{
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.contact .contact_i .contact_etc_box .contact_etc_p2{
+  transition: transform 0.3s ease;
+}
+
+.contact .contact_i .contact_etc_box:hover .contact_etc_p2{
+  transform: translateX(8px);
 }
 
 /* footer */
@@ -831,13 +853,16 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
     font-size: 13px;
   }
 
-  .contact .contact_i .contact_email .contact_email_email{
+  .contact .contact_i .contact_etc_box{
     color: #FFD700;
   }
 }
 
 /* media 360px */
 @media screen and (max-width:360px) {
+  .about{
+    padding: 180px 0px;
+  }
   .about .about_i .about_box .about_img img{
     width: 300px;
   }
@@ -856,5 +881,13 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
   .contact .contact_i .contact_email .contact_email_email:hover {
     color: #ffd700;
+  }
+
+  .contact .contact_i .contact_etc_box .contact_etc_p2{
+    transition: none;
+  }
+  
+  .contact .contact_i .contact_etc_box:hover .contact_etc_p2{
+    transform: none;
   }
 }
