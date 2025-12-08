@@ -858,11 +858,8 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   }
 }
 
-/* media 360px */
-@media screen and (max-width:360px) {
-  .about{
-    padding: 180px 0px;
-  }
+/* media 400px */
+@media screen and (max-width:500px) {
   .about .about_i .about_box .about_img img{
     width: 300px;
   }
@@ -876,7 +873,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   }
 
   .contact .contact_i .contact_email .contact_email_email{
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .contact .contact_i .contact_email .contact_email_email:hover {
