@@ -44,6 +44,8 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+
+  transition: transform 0.3s ease;
 }
 
 header .header_i {
@@ -200,6 +202,12 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   background-color: #fff;
   margin-left: 4px;
   vertical-align: middle;
+}
+
+.main .main_i .typewriter_box #typewriter_text .subtitle {
+  font-size: clamp(24px, 5vw, 60px);
+  display: block;
+  margin-top: 20px;
 }
 
 .cursor.blink {
@@ -969,5 +977,9 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
   .main .main_i .scroll_indicator .scroll_arrow {
     font-size: 16px;
+  }
+
+  .main .main_i .typewriter_box #typewriter_text .cursor {
+    height: 50px;
   }
 }
