@@ -45,24 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     typingInterval = setInterval(typeWriter, typingSpeed);
 
-    let lastScrollTop = 0;
     const header = document.querySelector('header');
-    let scrollThreshold = 100;
-
-    window.addEventListener('scroll', function () {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > scrollThreshold) {
-            if (scrollTop > lastScrollTop) {
-                header.style.transform = 'translateY(-100%)';
-            } else {
-                header.style.transform = 'translateY(0)';
-            }
-        } else {
-            header.style.transform = 'translateY(0)';
-        }
-
-        lastScrollTop = scrollTop;
-    });
+    if (header) {
+        header.style.transform = 'translateY(0)';
+    }
 
 });

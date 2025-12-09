@@ -289,12 +289,12 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 .about .about_i .about_title .about_title_title {
   font-size: 40px;
   font-family: "pB";
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .about .about_i .about_title .about_title_p {
   color: #8c8c8c;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* about > about_box + 이미지 수정 */
@@ -323,7 +323,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 }
 
 .about .about_i .about_box .about_text .about_text_title {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "pB";
   color: #FFD700;
   margin-bottom: 32px;
@@ -352,12 +352,12 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 .skills .skills_i .skills_title .skills_title_title {
   font-size: 40px;
   font-family: "pB";
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .skills .skills_i .skills_title .skills_title_p {
   color: #8c8c8c;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /* skills > slider_container */
@@ -664,11 +664,12 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 .portfolio .portfolio_i .portfolio_title .portfolio_title_title {
   font-size: 40px;
   font-family: "pB";
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .portfolio .portfolio_i .portfolio_title .portfolio_title_p {
   color: #8c8c8c;
+  font-size: 18px;
 }
 
 /* portfolio > portfolio_allbox */
@@ -763,7 +764,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 .contact .contact_i .contact_title_title {
   font-size: 40px;
   font-family: "pB";
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .contact .contact_i .contact_title_p {
@@ -773,6 +774,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
 .contact .contact_i .contact_title_p1 {
   margin-bottom: 16px;
+  font-size: 18px;
 }
 
 /* contact > contact_email */
@@ -790,7 +792,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 24px;
+  margin-top: 32px;
 }
 
 .contact .contact_i .contact_etc_box:hover {
@@ -890,12 +892,18 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
     color: #fff;
   }
 
+  .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+  }
+
   .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox:hover::before {
     width: 0%;
   }
 
   .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox:hover .portfolio_sbox_iconbox_text {
-    color: #fff;
+    color: #000;
   }
 
   .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox img {
@@ -904,7 +912,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   }
 
   .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox .portfolio_sbox_iconbox_text {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .contact .contact_i .contact_etc_box {
