@@ -189,7 +189,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 }
 
 .main .main_i .typewriter_box #typewriter_text {
-  font-size: clamp(32px, 8vw, 100px);
+  font-size: clamp(28px, 8vw, 100px);
   font-family: "pB";
   text-align: center;
   line-height: 1.2;
@@ -405,7 +405,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 /* skills > skills_textallbox */
 .skills .skills_i .skills_textallbox {
   border: 3px solid #fff;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   padding: 60px 20px;
   margin-bottom: 100px;
 
@@ -768,7 +768,6 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
 .contact .contact_i .contact_title_p {
   color: #8c8c8c;
-  font-size: 20px;
   line-height: 160%;
 }
 
@@ -778,7 +777,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
 /* contact > contact_email */
 .contact .contact_i .contact_email {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .contact .contact_i .contact_email .contact_email_email {
