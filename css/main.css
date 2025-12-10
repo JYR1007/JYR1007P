@@ -39,12 +39,10 @@ header {
   height: 100px;
   padding: 0 20px;
   background-color: #000;
-
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-
   transition: transform 0.3s ease;
 }
 
@@ -52,7 +50,6 @@ header .header_i {
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -124,11 +121,9 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   height: 0;
   background-color: #000;
   z-index: 999;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   overflow: hidden;
   transition: height 0.5s ease;
 }
@@ -239,7 +234,6 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 }
 
 @keyframes scrollBounce {
-
   0%,
   100% {
     transform: translateX(-50%) translateY(0);
@@ -255,7 +249,6 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 }
 
 @keyframes blink {
-
   0%,
   50% {
     opacity: 1;
@@ -332,6 +325,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 
 .about .about_i .about_box .about_text .about_text_p {
   width: 400px;
+  font-size: 18px;
 }
 
 /* skills */
@@ -401,44 +395,6 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   100% {
     transform: translateX(-50%);
   }
-}
-
-/* skills > skills_textallbox */
-.skills .skills_i .skills_textallbox {
-  border: 3px solid #fff;
-  /* border-radius: 16px; */
-  padding: 60px 20px;
-  margin-bottom: 100px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skills .skills_i .skills_textallbox .skills_textsbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 0;
-}
-
-.skills .skills_i .skills_textallbox .skills_textsbox .skills_textsbox_img {
-  display: flex;
-  gap: 0 24px;
-  margin-bottom: 24px;
-}
-
-.skills .skills_i .skills_textallbox .skills_textsbox .skills_textsbox_img img {
-  width: auto;
-  height: 50px;
-}
-
-.skills .skills_i .skills_textallbox .skills_textsbox .skills_textsbox_text {
-  text-align: center;
-}
-
-.skills .skills_i .skills_textallbox .skills_textsbox .skills_textsbox_text .skills_textsbox_text_p {
-  line-height: 160%;
 }
 
 /* skills > skills_etcbox */
@@ -583,7 +539,6 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 }
 
 @keyframes ripple {
-
   0%,
   100% {
     transform: translateY(0) scaleX(1);
@@ -677,7 +632,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 .portfolio .portfolio_i .portfolio_allbox {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0 24px;
+  gap: 0 40px;
 }
 
 .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox {
@@ -706,18 +661,15 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox {
   display: flex;
   align-items: center;
-
   border: 1px solid #fff;
   padding: 8px 10px;
   border-radius: 8px;
-
   overflow: hidden;
   position: relative;
 }
 
 .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox .portfolio_sbox_iconbox_text {
   padding-left: 10px;
-
   position: relative;
   z-index: 1;
   transition: color 0.4s ease;
@@ -1006,7 +958,10 @@ body.dark-mode {
 
 /* media 1024 */
 @media screen and (max-width:1240px) {
-  header .header_i {
+  header .header_i,
+  .main .main_i,
+  .about .about_i,
+  .footer .footer_i{
     max-width: 100%;
   }
 
@@ -1016,18 +971,6 @@ body.dark-mode {
 
   header .header_i .ham {
     display: flex;
-  }
-
-  .main .main_i {
-    max-width: 100%;
-  }
-
-  .about .about_i {
-    max-width: 100%;
-  }
-
-  .footer .footer_i {
-    max-width: 100%;
   }
 }
 
@@ -1044,6 +987,10 @@ body.dark-mode {
 
   .about .about_i .about_box .about_text .about_text_title {
     width: 400px;
+  }
+
+  .portfolio .portfolio_i .portfolio_allbox{
+    gap: 0 24px;
   }
 }
 
@@ -1119,23 +1066,11 @@ body.dark-mode {
     transform: none;
   }
 
-  .main {
-    padding: 150px 20px;
-  }
-
-  .about {
-    padding: 150px 20px;
-  }
-
-  .skills {
-    padding: 150px 20px;
-  }
-
-  .portfolio {
-    padding: 150px 20px;
-  }
-
-  .contact {
+  .main,
+  .about,
+  .skills,
+  .portfolio,
+  .contact{
     padding: 150px 20px;
   }
 
@@ -1192,7 +1127,7 @@ body.dark-mode {
   }
 
   body.light-mode .contact .contact_i .contact_etc_box:hover .contact_etc_p2 {
-    color: #0028FF;
+    color: #0028ff;
   }
 
   body.light-mode .contact .contact_i .contact_etc_box {
