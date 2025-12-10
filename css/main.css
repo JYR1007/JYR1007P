@@ -632,7 +632,7 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
 .portfolio .portfolio_i .portfolio_allbox {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0 40px;
+  gap: 0 32px;
 }
 
 .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox {
