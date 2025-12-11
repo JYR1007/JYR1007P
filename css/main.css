@@ -551,52 +551,25 @@ header .header_i .ham.active .ham_i .ham_span:nth-child(3) {
   }
 }
 
-.html-bar {
+.html-bar,
+.css-bar,
+.ps-bar,
+.ai-bar,
+.figma-bar {
   width: 90%;
 }
 
-.css-bar {
-  width: 90%;
-}
-
-.js-bar {
-  width: 70%;
-}
-
-.jquery-bar {
-  width: 80%;
-}
-
-.bootstrap-bar {
-  width: 70%;
-}
-
-.cafe24-bar {
-  width: 70%;
-}
-
-.git-bar {
-  width: 70%;
-}
-
+.js-bar,
+.bootstrap-bar,
+.cafe24-bar,
+.git-bar,
 .github-bar {
   width: 70%;
 }
 
-.ps-bar {
-  width: 90%;
-}
-
-.ai-bar {
-  width: 90%;
-}
-
+.jquery-bar,
 .id-bar {
   width: 80%;
-}
-
-.figma-bar {
-  width: 90%;
 }
 
 /* portfolio */
@@ -1008,6 +981,8 @@ body.dark-mode {
   }
 
   .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox {
+    width: 83px;
+    height: 40px;
     background-color: #fff;
     border: 1px solid #000;
     color: #000;
