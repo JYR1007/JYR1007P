@@ -993,8 +993,6 @@ body.dark-mode {
   }
 
   .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox {
-    width: 83px;
-    height: 40px;
     background-color: #fff;
     border: 1px solid #000;
     color: #000;
@@ -1009,12 +1007,16 @@ body.dark-mode {
   }
 
   .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox img {
-    width: 14px;
+    width: fit-content;
     height: auto;
   }
 
   .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon .portfolio_sbox_iconbox .portfolio_sbox_iconbox_text {
     font-size: 14px;
+  }
+
+  .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_icon{
+    gap: 16px 18px;
   }
 
   .contact .contact_i .contact_etc_box {
@@ -1119,9 +1121,5 @@ body.dark-mode {
 
   body.light-mode .contact .contact_i .contact_etc_box {
     color: #0028FF;
-  }
-
-  .portfolio .portfolio_i .portfolio_allbox .portfolio_sbox .portfolio_sbox_text .portfolio_sbox_text_title{
-    font-size: 20px;
   }
 }
